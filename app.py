@@ -8,7 +8,7 @@ st.markdown("Interactive dashboard to analyze global flood event datasets.")
 
 # Load the true data file or use clean alternative data to fix malformed file errors
 try:
-    df = pd.read_csv("data/Global_Flood_Database.csv")
+    df = pd.read_csv("Global_Flood_Database.csv")
 except Exception:
     data = {
         'Year': np.random.choice([2021, 2022, 2023, 2024, 2025], size=100),
